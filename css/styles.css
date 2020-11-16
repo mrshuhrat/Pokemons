@@ -27,14 +27,15 @@ h1 {
   padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  margin-right: -20px;
 }
 
 .pokemon {
+  margin-right: 20px;
   padding: 15px;
   margin-bottom: 40px;
   width: 200px;
-  height: 250px;
   background-color: rgb(229, 239, 245);
   border-radius: 10px;
   box-shadow: 0 0 15px 0 rgba(70, 49, 49, 0.5);

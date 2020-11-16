@@ -10,12 +10,49 @@
 </head>
 <body>
  
-  <div class="container pt-4">
+  <div class="container-lg">
+    <div class="row vh-100 pt-4">
 
-    <h1 class="text-center text-warning">Pokemons</h1>
+      <div class="col-3 border-right ">
+        <h2 class="h1 text-warning text-center font-weight-bold mb-4">Filter</h2>
+        <form class="form mx-auto d-flex flex-column" action="" method="GET">
+          <select class="type mb-3 form-control" name="type" class="type" id="tpye">
+            <option value="all">all</option>
+            <option value="fire">Fire</option>
+            <option value="grass">grass</option>
+            <option value="poison">poison</option>
+            <option value="ice">ice</option>
+            <option value="flying">flying</option>
+            <option value="psychic">psychic</option>
+            <option value="water">water</option>
+            <option value="ground">ground</option>
+            <option value="rock">rock</option>
+          </select>
 
-    <div class="pokemons__wrapper js-pokemons-wrapper"></div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="male" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Default radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="female" checked>
+            <label class="form-check-label" for="exampleRadios2">
+              Default radio
+            </label>
+          </div>
+          <button class="btn bg-success w-100 ml-auto text-white font-weight-bold js-button" type="submit">Ok</button>
+        </form>
+      </div>
 
+      <div class="col-9">
+        <div class="text-center">
+          <img src="img/pokemon_logo.png" alt="pokemon logo" width="300">
+        </div>
+        <div class="pokemons__wrapper js-pokemons-wrapper"></div>
+      </div>
+
+    </div>
   </div>
 
 
